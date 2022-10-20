@@ -24,6 +24,20 @@ class FirstTryApplicationTests {
         System.out.println(cevre);
         */
 
+        byte vByte = 1;
+        short vShrt = 2;
+        int vInt = 3;
+        long vLong = 4;
+        System.out.println(vByte);
+        System.out.println(vShrt);
+        System.out.println(vInt);
+        System.out.println(vLong);
+
+        float vFloat = 3.14f;
+        double vDouble = 4.14;
+        System.out.println(vFloat);
+        System.out.println(vDouble);
+
     }
 
     @Test
