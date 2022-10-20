@@ -38,7 +38,7 @@ class FirstTryApplicationTests {
         System.out.println(vFloat);
         System.out.println(vDouble); */
 
-        char vChar = 'b';
+        /* char vChar = 'b';
         char v2Char = 98;
         System.out.println(vChar);
         System.out.println(v2Char);
@@ -52,7 +52,21 @@ class FirstTryApplicationTests {
         boolean dogru = true;
         boolean yanlis =  false;
         System.out.println(dogru);
-        System.out.println(yanlis);
+        System.out.println(yanlis); */
+
+        /* String vStr = "Eda";
+        System.out.println(vStr); */
+
+        int a = 4, b = 3, c = 6;
+        boolean kosul1 = a >= b;
+        boolean kosul2 = a <= c;
+        // System.out.println(kosul1 && kosul2);
+        boolean sonuc = kosul1 || kosul2;
+        // System.out.println(!sonuc);
+        String result = sonuc ? "İşte bu!" : "Olmadı";
+        int result2 = sonuc ? 1 : 0;
+        System.out.println(result2);
+        System.out.println(result);
 
 
     }
