@@ -92,25 +92,24 @@ class FirstTryApplicationTests {
         boolean vsorgu = input.hasNextBoolean();
         System.out.println(vsorgu); */
 
-
-        Scanner math = new Scanner(System.in);
+        // Not ortalamasi hesaplayan program baslangic
+        Scanner inp = new Scanner(System.in);
         System.out.println("Matematik Notunu Giriniz : ");
-        int mathNot = math.nextInt();
+        double mathNot = inp.nextInt();
 
-        Scanner phy = new Scanner(System.in);
         System.out.println("Fizik Notunu Giriniz : ");
-        int phyNot = phy.nextInt();
+        double phyNot = inp.nextInt();
 
-        Scanner chm = new Scanner(System.in);
         System.out.print("Kimya Notunu Giriniz : ");
-        int chmNot = chm.nextInt();
+        double chmNot = inp.nextInt();
 
-        int ort = (mathNot + phyNot + chmNot) / 3;
+        double ort = (mathNot + phyNot + chmNot) / 3;
         System.out.println("Not Ortalamanız : " + ort);
 
         boolean kosul = ort >= 60;
         String result = kosul ? "Sınıfı Geçti" : "Sınıfta Kaldı";
         System.out.println(result);
+        // Not ortalamasi hesaplayan program son
 
     }
 
