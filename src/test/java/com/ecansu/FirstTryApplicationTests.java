@@ -2,6 +2,7 @@ package com.ecansu;
 
 import org.junit.jupiter.api.Test;
 import org.springframework.boot.test.context.SpringBootTest;
+import java.util.Scanner;
 
 @SpringBootTest
 class FirstTryApplicationTests {
@@ -57,7 +58,7 @@ class FirstTryApplicationTests {
         /* String vStr = "Eda";
         System.out.println(vStr); */
 
-        int a = 4, b = 3, c = 6;
+        /* int a = 4, b = 3, c = 6;
         boolean kosul1 = a >= b;
         boolean kosul2 = a <= c;
         // System.out.println(kosul1 && kosul2);
@@ -66,8 +67,50 @@ class FirstTryApplicationTests {
         String result = sonuc ? "İşte bu!" : "Olmadı";
         int result2 = sonuc ? 1 : 0;
         System.out.println(result2);
-        System.out.println(result);
+        System.out.println(result);*/
 
+        /* int a;
+        Scanner input = new Scanner(System.in);
+        System.out.print("A sayısını giriniz : ");
+        a = input.nextInt();
+        System.out.println(a);
+
+        Scanner input = new Scanner(System.in);
+        System.out.println("İsnizi giriniz :");
+        String vIsım = input.nextLine();
+        System.out.println(vIsım);
+
+        //string veride sayı girilebiliyor fakar rakamsal verilerde harf girilmiyor.
+
+        Scanner input = new Scanner(System.in);
+        double vnmbr = input.nextDouble();
+        System.out.println(vnmbr); */
+
+        //double veri türüyle tam sayı ve virgüllü ondalık sayı yazılabiliyor fakat noktalı ondalık sayı yazılamıyor.
+
+        /* Scanner input = new Scanner (System.in);
+        boolean vsorgu = input.hasNextBoolean();
+        System.out.println(vsorgu); */
+
+
+        Scanner math = new Scanner(System.in);
+        System.out.println("Matematik Notunu Giriniz : ");
+        int mathNot = math.nextInt();
+
+        Scanner phy = new Scanner(System.in);
+        System.out.println("Fizik Notunu Giriniz : ");
+        int phyNot = phy.nextInt();
+
+        Scanner chm = new Scanner(System.in);
+        System.out.print("Kimya Notunu Giriniz : ");
+        int chmNot = chm.nextInt();
+
+        int ort = (mathNot + phyNot + chmNot) / 3;
+        System.out.println("Not Ortalamanız : " + ort);
+
+        boolean kosul = ort >= 60;
+        String result = kosul ? "Sınıfı Geçti" : "Sınıfta Kaldı";
+        System.out.println(result);
 
     }
 
