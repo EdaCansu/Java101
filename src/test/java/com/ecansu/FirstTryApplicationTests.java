@@ -135,7 +135,7 @@ class FirstTryApplicationTests {
         //KDV hesaplayan program son
 
         //Hipotenüs ve ucgen alanı hesaplayan program baslabgic
-        double knr1, knr2, knr3;
+        /*double knr1, knr2, knr3;
         Scanner input = new Scanner(System.in);
         System.out.println("Birinci kenar uzunluğunu giriniz : ");
         knr1 = input.nextDouble();
@@ -147,8 +147,20 @@ class FirstTryApplicationTests {
 
         double uBileseni = (knr1 + knr2 + knr3) / 2;
         double alan2 = Math.sqrt(uBileseni * (uBileseni - knr1) * (uBileseni - knr2) * (uBileseni - knr3));
-        System.out.println("Alanı: " +alan2);
+        System.out.println("Alanı: " +alan2); */
         //Hipotenüs ve ucgen alanı hesaplayan program son
+
+        //taksimetre baslangic
+        Scanner girdi = new Scanner(System.in);
+        double km, perKm = 2.20, total, startPrice = 10;
+        System.out.println("Gidilen km'yi giriniz: ");
+        km= girdi.nextDouble();
+
+        total = startPrice + (perKm * km);
+        total = (total < 20) ? 20 : total;
+        System.out.println("Toplam Tutar: " + total);
+        //taksimetre son
+
     }
 
     @Test
