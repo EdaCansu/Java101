@@ -113,7 +113,7 @@ class FirstTryApplicationTests {
 
 
         // KDV hesaplayan program baslangic
-        Scanner mny = new Scanner(System.in);
+        /*  Scanner mny = new Scanner(System.in);
 
         System.out.print("Para miktarını giriniz : ");
         double money = mny.nextDouble();
@@ -131,8 +131,24 @@ class FirstTryApplicationTests {
         double result = kosul ? Kdv1F : Kdv2F;
         double result2 = kosul ? Kdv1 : Kdv2;
         System.out.println("KDV'li Fiyat: " + result);
-        System.out.println("KDV tutarı: " + result2);
+        System.out.println("KDV tutarı: " + result2); */
         //KDV hesaplayan program son
+
+        //Hipotenüs ve ucgen alanı hesaplayan program baslabgic
+        double knr1, knr2, knr3;
+        Scanner input = new Scanner(System.in);
+        System.out.println("Birinci kenar uzunluğunu giriniz : ");
+        knr1 = input.nextDouble();
+        System.out.println("İkinci kenar uzunluğunu giriniz : ");
+        knr2 = input.nextDouble();
+
+        knr3 = Math.sqrt((knr1 * knr1) + (knr2 * knr2));
+        System.out.println("Hipotenüs : " + knr3);
+
+        double uBileseni = (knr1 + knr2 + knr3) / 2;
+        double alan2 = Math.sqrt(uBileseni * (uBileseni - knr1) * (uBileseni - knr2) * (uBileseni - knr3));
+        System.out.println("Alanı: " +alan2);
+        //Hipotenüs ve ucgen alanı hesaplayan program son
     }
 
     @Test
