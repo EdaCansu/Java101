@@ -117,16 +117,19 @@ class FirstTryApplicationTests {
 
         System.out.print("Para miktarını giriniz : ");
         double money = mny.nextDouble();
+        double kdv1Oran = 0.18;
+        double kdv2Oran = 0.08;
+        double Kdv1 = money * kdv1Oran;
+        double Kdv2 = money * kdv2Oran;
+        double Kdv2F = money + Kdv2;
+        double Kdv1F = money + Kdv1;
 
-        double dKdvF = money + ((money * 8) / 100);
-        double yKdvF = money + ((money * 18) / 100);
-        double dKdv = dKdvF - money;
-        double yKdv = yKdvF - money;
+
         System.out.println("KDV'siz Fiyat: " + money);
 
         boolean kosul = money <= 1000;
-        double result = kosul ? yKdvF : dKdvF;
-        double result2 = kosul ? yKdv : dKdv;
+        double result = kosul ? Kdv1F : Kdv2F;
+        double result2 = kosul ? Kdv1 : Kdv2;
         System.out.println("KDV'li Fiyat: " + result);
         System.out.println("KDV tutarı: " + result2);
         //KDV hesaplayan program son
