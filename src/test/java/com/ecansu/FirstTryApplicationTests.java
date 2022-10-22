@@ -151,15 +151,32 @@ class FirstTryApplicationTests {
         //Hipotenüs ve ucgen alanı hesaplayan program son
 
         //taksimetre baslangic
-        Scanner girdi = new Scanner(System.in);
+        /* Scanner girdi = new Scanner(System.in);
         double km, perKm = 2.20, total, startPrice = 10;
         System.out.println("Gidilen km'yi giriniz: ");
         km= girdi.nextDouble();
 
         total = startPrice + (perKm * km);
         total = (total < 20) ? 20 : total;
-        System.out.println("Toplam Tutar: " + total);
+        System.out.println("Toplam Tutar: " + total); */
         //taksimetre son
+
+        //Dairenin alanını ve çevresini hesaplayan program baslangic
+        Scanner veri = new Scanner(System.in);
+        double yCap, pi, alan, cevre, aci, dilimAlani;
+        System.out.println("Lütfen yarıçapı giriniz: ");
+        yCap = veri.nextDouble();
+        pi = 3.14;
+        alan = pi * yCap * yCap;
+        System.out.println("Alan: " + alan);
+        cevre = 2 * pi * yCap;
+        System.out.println("Çevre: " + cevre);
+        System.out.println("Lütfen açıyı giriniz: ");
+        aci = veri.nextDouble();
+        dilimAlani = (pi * (yCap * yCap) * aci) / 360;
+        System.out.println("Gösterilen dilimin alanı: " + dilimAlani);
+        //Dairenin alanını ve çevresini hesaplayan program son
+
 
     }
 
