@@ -162,7 +162,7 @@ class FirstTryApplicationTests {
         //taksimetre son
 
         //Dairenin alanını ve çevresini hesaplayan program baslangic
-        Scanner veri = new Scanner(System.in);
+        /* Scanner veri = new Scanner(System.in);
         double yCap, pi, alan, cevre, aci, dilimAlani;
         System.out.println("Lütfen yarıçapı giriniz: ");
         yCap = veri.nextDouble();
@@ -174,9 +174,19 @@ class FirstTryApplicationTests {
         System.out.println("Lütfen açıyı giriniz: ");
         aci = veri.nextDouble();
         dilimAlani = (pi * (yCap * yCap) * aci) / 360;
-        System.out.println("Gösterilen dilimin alanı: " + dilimAlani);
+        System.out.println("Gösterilen dilimin alanı: " + dilimAlani); */
         //Dairenin alanını ve çevresini hesaplayan program son
 
+        //Vücut kitle endeksi hesaplayan program baslangic
+        Scanner inp = new Scanner(System.in);
+        double boy, kilo, vIndex;
+        System.out.print("Lütfen boyunuzu metre cinsinden giriniz: ");
+        boy = inp.nextDouble();
+        System.out.print("Lütfen kilonuzu giriniz: ");
+        kilo = inp.nextDouble();
+        vIndex = kilo / (boy * boy);
+        System.out.println("Vücut Kitle İndeksiniz: " + vIndex);
+        //Vücut kitle endeksi hesaplayan program son
 
     }
 
