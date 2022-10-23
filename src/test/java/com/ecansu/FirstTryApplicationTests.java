@@ -178,15 +178,38 @@ class FirstTryApplicationTests {
         //Dairenin alanını ve çevresini hesaplayan program son
 
         //Vücut kitle endeksi hesaplayan program baslangic
-        Scanner inp = new Scanner(System.in);
+        /* Scanner inp = new Scanner(System.in);
         double boy, kilo, vIndex;
         System.out.print("Lütfen boyunuzu metre cinsinden giriniz: ");
         boy = inp.nextDouble();
         System.out.print("Lütfen kilonuzu giriniz: ");
         kilo = inp.nextDouble();
         vIndex = kilo / (boy * boy);
-        System.out.println("Vücut Kitle İndeksiniz: " + vIndex);
+        System.out.println("Vücut Kitle İndeksiniz: " + vIndex); */
         //Vücut kitle endeksi hesaplayan program son
+
+        //Manav kasa programı baslangic
+        Scanner input = new Scanner(System.in);
+        double armut, elma, domates, muz, patlican, armutKg, elmaKg, domatesKg, muzKg, patlicanKg, tutar;
+        armut = 2.14;
+        elma = 3.67;
+        domates = 1.11;
+        muz = 0.95;
+        patlican = 5.00;
+
+        System.out.println("Kaç kilo armut aldınız? ");
+        armutKg = input.nextDouble();
+        System.out.println("Kaç kilo elma aldınız? ");
+        elmaKg = input.nextDouble();
+        System.out.println("Kaç kilo domates aldınız? ");
+        domatesKg = input.nextDouble();
+        System.out.println("Kaç kilo muz aldınız? ");
+        muzKg = input.nextDouble();
+        System.out.println("Kaç kilo patlıcan aldınız? ");
+        patlicanKg = input.nextDouble();
+        tutar = (armut * armutKg) + (elma * elmaKg) + (domates * domatesKg) + (muz * muzKg) + (patlican * patlicanKg);
+        System.out.print("Toplam tutar: " + tutar);
+
 
     }
 
