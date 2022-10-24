@@ -11,5 +11,14 @@ public class SecondWorkingArea {
         <= Küçük Eşittir ( x <= y ) */
         // Karsilastirma operatorleri son
 
+        // Mantiksal operatorler baslangic
+        /*
+        && VE (AND)
+        || Veya (OR)
+        ! Ters İşlem
+        ? : Soru İşareti Operatörü (kosul ? "dogru" : "yanlis")
+        */
+        // Mantiksal operatorler son
+
     }
 }
