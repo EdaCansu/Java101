@@ -1,5 +1,7 @@
 package com.ecansu;
 
+import java.util.Scanner;
+
 public class SecondWorkingArea {
     public static void main(String[] args) {
         // Karsilastirma operatorleri baslangic
@@ -21,7 +23,7 @@ public class SecondWorkingArea {
         // Mantiksal operatorler son
 
         // if-else bloklari baslangic
-        int a = 10, b = 20, c = 1;
+        /* int a = 10, b = 20, c = 1;
         if ((a < b) && (a < c)) {
             System.out.println("A en küçük sayıdır.");
         } else if ((b < a) && (b < c)) {
@@ -29,7 +31,40 @@ public class SecondWorkingArea {
         } else {
             System.out.println("C en küçük sayıdır.");
         }
-        System.out.println("Programınız sonlandı!");
+        System.out.println("Programınız sonlandı!");*/
         // if-else bloklari son
+
+        //switch case baslangic
+        int day;
+        Scanner takenDay = new Scanner(System.in);
+        System.out.println("Lütfen bugünün kaçıncı gün olduğunu giriniz");
+        day = takenDay.nextInt();
+        switch (day){
+            case 1:
+                System.out.println("Bugün günlerden pazartesi");
+                break;
+            case 2:
+                System.out.println("Bugün günlerden salı");
+                break;
+            case 3:
+                System.out.println("Bugün günlerden çarşamba");
+                break;
+            case 4:
+                System.out.println("Bugün günlerden perşembe");
+                break;
+            case 5:
+                System.out.println("Bugün günlerden cuma");
+                break;
+            case 6:
+                System.out.println("Bugün günlerden cumartesi");
+                break;
+            case 7:
+                System.out.println("Bugün günlerden pazar");
+                break;
+            default:
+                System.out.println("Yanlış bir değer girdiniz.");
+        }
+        System.out.println("Programınız bitmiştir.");
+        //switch case son
     }
 }
