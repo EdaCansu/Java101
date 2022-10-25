@@ -35,7 +35,7 @@ public class SecondWorkingArea {
         // if-else bloklari son
 
         //switch case baslangic
-        int day;
+        /* int day;
         Scanner takenDay = new Scanner(System.in);
         System.out.println("Lütfen bugünün kaçıncı gün olduğunu giriniz");
         day = takenDay.nextInt();
@@ -64,7 +64,41 @@ public class SecondWorkingArea {
             default:
                 System.out.println("Yanlış bir değer girdiniz.");
         }
-        System.out.println("Programınız bitmiştir.");
+        System.out.println("Programınız bitmiştir."); */
         //switch case son
+
+        //Hesap makinesi baslangic
+        int n1, n2, select;
+        Scanner number = new Scanner(System.in);
+        System.out.print("Birinci sayıyı giriniz: ");
+        n1 = number.nextInt();
+        System.out.print("İkinci sayıyı giriniz: ");
+        n2 = number.nextInt();
+
+        System.out.println("1-Toplama\n2-Çıkarma\n3-Çarpma\n4-Bölme");
+        System.out.print("Lütfen yapılmasını istediğiniz işlemi seçiniz: ");
+        select = number.nextInt();
+
+        switch (select){
+            case 1:
+                System.out.println("Toplam :" + (n1 + n2));
+                break;
+            case 2:
+                System.out.println("Çıkarm :" + (n1 - n2));
+                break;
+            case 3:
+                System.out.println("Çarpım :" + (n1 * n2));
+                break;
+            case 4:
+                if (n2 == 0){
+                    System.out.println("Bir sayı sıfıra bölünemez");
+                } else {
+                    System.out.println("Bölüm :" + (n1 / n2));
+                }
+                break;
+            default:
+                System.out.println("Yanlış bir seçim yaptınız. Tekrar deneyiniz.");
+        }
+
     }
 }
