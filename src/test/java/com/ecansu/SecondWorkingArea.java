@@ -101,8 +101,8 @@ public class SecondWorkingArea {
         }*/
         //Hesap makinesi son
 
-        //Parola sorgulama baslangic
-        int p1, p2, select;
+        //Parola sorgulama baslangic (integer parola)
+        /* int p1, p2, select;
         Scanner password = new Scanner(System.in);
         System.out.println("Lütfen şifrenizi giriniz: ");
         p1 = password.nextInt();
@@ -125,7 +125,23 @@ public class SecondWorkingArea {
                 System.out.println("İyi günler");
             }
         }
-        System.out.println("Program sonlanmıştır.");
+        System.out.println("Program sonlanmıştır.");*/
+        //Parola sorgulama son
+
+        //Parola sorgulama baslangic (String parola)
+        String userName, password, userName1;
+        Scanner input = new Scanner(System.in);
+        System.out.print("Lütfen kullanıcı adınızı giriniz: ");
+        userName = input.nextLine();
+        System.out.print("Lütfen şifrenizi giriniz: ");
+        password = input.nextLine();
+        userName1 = "kullanici1";
+
+        if (userName.equals(userName1) && password.equals("parola123")) {
+            System.out.println("Giriş yaptınız!");
+        } else {
+            System.out.println("Hatalı bilgi girdiniz!");
+        }
         //Parola sorgulama son
     }
 }
