@@ -68,7 +68,7 @@ public class SecondWorkingArea {
         //switch case son
 
         //Hesap makinesi baslangic
-        int n1, n2, select;
+        /*int n1, n2, select;
         Scanner number = new Scanner(System.in);
         System.out.print("Birinci sayıyı giriniz: ");
         n1 = number.nextInt();
@@ -98,7 +98,34 @@ public class SecondWorkingArea {
                 break;
             default:
                 System.out.println("Yanlış bir seçim yaptınız. Tekrar deneyiniz.");
-        }
+        }*/
+        //Hesap makinesi son
 
+        //Parola sorgulama baslangic
+        int p1, p2, select;
+        Scanner password = new Scanner(System.in);
+        System.out.println("Lütfen şifrenizi giriniz: ");
+        p1 = password.nextInt();
+        int userPassword = 12;
+
+        if (p1 == userPassword) {
+            System.out.println("Şifre kabul edildi.");
+        }else {
+            System.out.println("Şifrenizi değiştirmek ister misiniz? \n1-isterim\n2-istemem");
+            select = password.nextInt();
+            if (select == 1){
+                System.out.println("Yeni bir şifre oluşturun");
+                p2 = password.nextInt();
+                if (p2 == userPassword) {
+                    System.out.println("Şifre oluşturulamadı, tekrar deneyiniz.");
+                } else {
+                    System.out.println("Yeni şifre oluşturuldu.");
+                }
+            } else {
+                System.out.println("İyi günler");
+            }
+        }
+        System.out.println("Program sonlanmıştır.");
+        //Parola sorgulama son
     }
 }
