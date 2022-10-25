@@ -8,7 +8,7 @@ import java.util.Scanner;
 class FirstTryApplicationTests {
 
     public static void main(String[] args) {
-     //   System.out.println("Hello World");
+        //   System.out.println("Hello World");
       /*        int number1 = 10;
         System.out.println("number1");
         int number1, number2 = 20, number3;
@@ -189,7 +189,7 @@ class FirstTryApplicationTests {
         //Vücut kitle endeksi hesaplayan program son
 
         //Manav kasa programı baslangic
-        Scanner input = new Scanner(System.in);
+        /* Scanner input = new Scanner(System.in);
         double armut, elma, domates, muz, patlican, armutKg, elmaKg, domatesKg, muzKg, patlicanKg, tutar;
         armut = 2.14;
         elma = 3.67;
@@ -208,8 +208,8 @@ class FirstTryApplicationTests {
         System.out.println("Kaç kilo patlıcan aldınız? ");
         patlicanKg = input.nextDouble();
         tutar = (armut * armutKg) + (elma * elmaKg) + (domates * domatesKg) + (muz * muzKg) + (patlican * patlicanKg);
-        System.out.print("Toplam tutar: " + tutar);
-
+        System.out.print("Toplam tutar: " + tutar); */
+        //Manav kasa programı son
 
     }
 
