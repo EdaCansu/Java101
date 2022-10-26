@@ -145,7 +145,7 @@ public class SecondWorkingArea {
         //Parola sorgulama son
 
         //Sınıf gecme durumu baslangic
-        int not1, ort;
+        /* int not1, ort;
         Scanner inp = new Scanner(System.in);
         System.out.print("Lütfen notunuzu giriniz: ");
         not1 = inp.nextInt();
@@ -160,9 +160,28 @@ public class SecondWorkingArea {
             System.out.println("Sınıf Ortalaması: " + ort);
         } else {
             System.out.println("Hatalı değer girdiniz, tekrar deneyiniz.");
+        } */
+        //Sınıf gecme son
+
+        //Hava sıcaklığına göre etkinlik önerme başlangıç
+        int degree;
+        Scanner inp = new Scanner(System.in);
+        System.out.print("Lütfen hava sıcaklığını giriniz: ");
+        degree = inp.nextInt();
+
+        if(degree <= 5) {
+            System.out.println("Tam kayak yapmalık hava!");
+        } else if (degree <= 15) {
+            System.out.println("Evde film keyfi :)");
+        } else if (degree <= 20) {
+            System.out.println("Arkadaşlarla buluşmaya hazır mısın?");
+        } else if (degree <= 25 ) {
+            System.out.println("Parklar, bahçeler seni bekliyor!");
+        } else if (degree > 25) {
+            System.out.println("Haydi denize!!");
         }
 
 
-        //Sınıf gecme son
+        //Hava sıcaklığına göre etkinlik önerme son
     }
 }
