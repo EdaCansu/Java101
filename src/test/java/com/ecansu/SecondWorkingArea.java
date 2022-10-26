@@ -129,7 +129,7 @@ public class SecondWorkingArea {
         //Parola sorgulama son
 
         //Parola sorgulama baslangic (String parola)
-        String userName, password, userName1;
+        /* String userName, password, userName1;
         Scanner input = new Scanner(System.in);
         System.out.print("Lütfen kullanıcı adınızı giriniz: ");
         userName = input.nextLine();
@@ -141,7 +141,28 @@ public class SecondWorkingArea {
             System.out.println("Giriş yaptınız!");
         } else {
             System.out.println("Hatalı bilgi girdiniz!");
-        }
+        } */
         //Parola sorgulama son
+
+        //Sınıf gecme durumu baslangic
+        int not1, ort;
+        Scanner inp = new Scanner(System.in);
+        System.out.print("Lütfen notunuzu giriniz: ");
+        not1 = inp.nextInt();
+        ort = 0;
+        if((not1 >= 55) && (not1 > 0) && (not1 < 100)){
+            ort = ort + not1;
+            System.out.println("Sınıfı geçtiniz!");
+            System.out.println("Sınıf Ortalaması: " + ort);
+        } else if ((not1 <= 55) && (not1 > 0) && (not1 < 100)){
+            ort = ort + not1;
+            System.out.println("Üzgünüz, sınıfı geçemediniz!");
+            System.out.println("Sınıf Ortalaması: " + ort);
+        } else {
+            System.out.println("Hatalı değer girdiniz, tekrar deneyiniz.");
+        }
+
+
+        //Sınıf gecme son
     }
 }
