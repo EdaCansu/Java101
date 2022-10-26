@@ -164,7 +164,7 @@ public class SecondWorkingArea {
         //Sınıf gecme son
 
         //Hava sıcaklığına göre etkinlik önerme başlangıç
-        int degree;
+        /*int degree;
         Scanner inp = new Scanner(System.in);
         System.out.print("Lütfen hava sıcaklığını giriniz: ");
         degree = inp.nextInt();
@@ -179,9 +179,47 @@ public class SecondWorkingArea {
             System.out.println("Parklar, bahçeler seni bekliyor!");
         } else if (degree > 25) {
             System.out.println("Haydi denize!!");
-        }
-
-
+        } */
         //Hava sıcaklığına göre etkinlik önerme son
+
+        //Sayı sıralama başlangıç
+        int n1, n2, n3;
+        Scanner inp = new Scanner(System.in);
+        System.out.print("Lütfen birinci sayıyı giriniz: ");
+        n1 = inp.nextInt();
+        System.out.print("Lütfen ikinci sayıyı giriniz: ");
+        n2 = inp.nextInt();
+        System.out.print("Lütfen üçüncü sayıyı giriniz: ");
+        n3 = inp.nextInt();
+
+        if (n1 > n2 && n1 > n3){
+            System.out.println(n1);
+            if (n2 > n3){
+                System.out.println(n2);
+                System.out.println(n3);
+            } else {
+                System.out.println(n3);
+                System.out.println(n2);
+            }
+        } else if (n2 > n1 && n2 > n3) {
+            System.out.println(n2);
+            if (n1 > n3){
+                System.out.println(n1);
+                System.out.println(n3);
+            } else {
+                System.out.println(n3);
+                System.out.println(n1);
+            }
+        } else {
+            System.out.println(n3);
+            if (n1 > n2){
+                System.out.println(n1);
+                System.out.println(n2);
+            } else {
+                System.out.println(n2);
+                System.out.println(n1);
+            }
+        }
+        //Sayı sıralama son
     }
 }
