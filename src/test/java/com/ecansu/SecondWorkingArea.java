@@ -229,12 +229,13 @@ public class SecondWorkingArea {
         //Sayı sıralama son
 
         //Burç bulma başlangıç
-        int bDay, month;
+        /* int bDay, month;
         Scanner inp = new Scanner(System.in);
         System.out.print("Lütfen doğduğunuz ayı giriniz: ");
         month = inp.nextInt();
         System.out.print("Lütfen doğduğunuz günü giriniz: ");
         bDay = inp.nextInt();
+
 
         switch (month){
             case 1:
@@ -323,10 +324,68 @@ public class SecondWorkingArea {
                 break;
             default:
                 System.out.println("Hatalı bilgi girdiniz:");
-
-        }
+        } */
         //Burç bulma son
 
+        //Uçak bileti fiyatı hesaplama başlangıç
+        double km, pricePerKm, total, kidPrice, youngPrice, oldPrice;
+        int age, type;
+        Scanner inp = new Scanner(System.in);
+        System.out.print("Lütfen kaç km gideceğinizi giriniz: ");
+        km = inp.nextDouble();
+        System.out.print("Lütfen yaşınızı giriniz: ");
+        age = inp.nextInt();
+        System.out.print("Lütfen yolculuk tipinizi yazınız. Tek yön için \"1\", gidiş-dönüş için \"2\" yazınız. ");
+        type = inp.nextInt();
 
+        pricePerKm = 0.10;
+        total = km *  pricePerKm;
+        kidPrice = total / 2;
+        youngPrice = (9 * total) / 10;
+        oldPrice = (7 * total) / 10;
+
+        boolean isError = false;
+
+        if (km < 0 || age < 0 || type < 1 || type >2) {
+            isError = true;
+        } else {
+            isError = false;
+        }
+
+        if (isError) {
+            System.out.println("Hatalı bilgi girdiniz. Lütfen tekrar deneyiniz.");
+        } else {
+            if (type == 1) {
+                if (age < 12) {
+                    System.out.println("Toplam ücret: " + kidPrice);
+                } else if (age > 12 && age < 24) {
+                    System.out.println("Toplam ücret: " + youngPrice);
+                } else if (age >= 25 && age <= 65) {
+                    System.out.println("Toplam ücret: " + total);
+                } else if (age > 65) {
+                    System.out.println("Toplam ücret: " + oldPrice);
+                }
+            }
+            if (type == 2){
+                if (age < 12){
+                    kidPrice -= kidPrice * 0.2;
+                    kidPrice *= 2;
+                    System.out.println("Toplam ücret: " + kidPrice);
+                } else if (age > 12 && age < 24){
+                    youngPrice -= youngPrice * 0.20;
+                    youngPrice *= 2;
+                    System.out.println("Toplam ücret: " + youngPrice);
+                } else if (age >= 25 && age <= 65) {
+                    total -= total * 0.2;
+                    total *= 2;
+                    System.out.println("Toplam ücret: " + total);
+                } else if (age > 65) {
+                    oldPrice -= oldPrice * 0.2;
+                    oldPrice *= 2;
+                    System.out.println("Toplam ücret: " + oldPrice);
+                }
+            }
+        }
+        //Uçak bileti fiyatı hesaplama son
     }
 }
