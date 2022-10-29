@@ -389,7 +389,7 @@ public class SecondWorkingArea {
         //Uçak bileti fiyatı hesaplama son
 
         //Çin zodyağı hesaplama başlangıç
-        int bYear, zodiac;
+        /*int bYear, zodiac;
         Scanner input = new Scanner(System.in);
         System.out.print("Lütfen doğum yılınızı dört haneli olacak şekilde yazınız?");
         bYear = input.nextInt();
@@ -435,9 +435,37 @@ public class SecondWorkingArea {
             default:
                 System.out.println("Hatalı bilgi girdiniz.");
                 break;
+        } */
+        //Çin zodyağı hesaplama son
+
+        //Artık yıl hesaplama başlangıç
+
+        int year;
+        Scanner inp = new Scanner(System.in);
+        System.out.print("Lütfen sorgulamak isttediğiniz yılı giriniz: ");
+        year = inp.nextInt();
+        boolean isError = false;
+
+        if (year % 4 == 0) {
+            if (year % 100 == 0) {
+                if (year % 400 == 0) {
+                    isError = false;
+                } else {
+                    isError = true;
+                }
+            } else {
+                isError = false;
+            }
+        } else {
+            isError = true;
         }
 
+        if (isError) {
+            System.out.println(year + " bir artık yıl değildir.");
+        } else {
+            System.out.println(year + " bir artık yıldır.");
+        }
 
-        //Çin zodyağı hesaplama son
+        //Artık yıl hesaplama son
     }
 }
