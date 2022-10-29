@@ -328,7 +328,7 @@ public class SecondWorkingArea {
         //Burç bulma son
 
         //Uçak bileti fiyatı hesaplama başlangıç
-        double km, pricePerKm, total, kidPrice, youngPrice, oldPrice;
+        /* double km, pricePerKm, total, kidPrice, youngPrice, oldPrice;
         int age, type;
         Scanner inp = new Scanner(System.in);
         System.out.print("Lütfen kaç km gideceğinizi giriniz: ");
@@ -385,7 +385,59 @@ public class SecondWorkingArea {
                     System.out.println("Toplam ücret: " + oldPrice);
                 }
             }
-        }
+        } */
         //Uçak bileti fiyatı hesaplama son
+
+        //Çin zodyağı hesaplama başlangıç
+        int bYear, zodiac;
+        Scanner input = new Scanner(System.in);
+        System.out.print("Lütfen doğum yılınızı dört haneli olacak şekilde yazınız?");
+        bYear = input.nextInt();
+        zodiac = bYear % 12;
+
+        switch (zodiac) {
+            case 0:
+                System.out.println("Çin zodyağı burcunuz: maymun");
+                break;
+            case 1:
+                System.out.println("Çin zodyağı burcunuz: horoz");
+                break;
+            case 2:
+                System.out.println("Çin zodyağı burcunuz: köpek");
+                break;
+            case 3:
+                System.out.println("Çin zodyağı burcunuz: domuz");
+                break;
+            case 4:
+                System.out.println("Çin zodyağı burcunuz: fare");
+                break;
+            case 5:
+                System.out.println("Çin zodyağı burcunuz: öküz");
+                break;
+            case 6:
+                System.out.println("Çin zodyağı burcunuz: kaplan");
+                break;
+            case 7:
+                System.out.println("Çin zodyağı burcunuz: tavşan");
+                break;
+            case 8:
+                System.out.println("Çin zodyağı burcunuz: ejderha");
+                break;
+            case 9:
+                System.out.println("Çin zodyağı burcunuz: yılan");
+                break;
+            case 10:
+                System.out.println("Çin zodyağı burcunuz: at");
+                break;
+            case 11:
+                System.out.println("Çin zodyağı burcunuz: koyun");
+                break;
+            default:
+                System.out.println("Hatalı bilgi girdiniz.");
+                break;
+        }
+
+
+        //Çin zodyağı hesaplama son
     }
 }
