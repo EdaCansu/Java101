@@ -48,11 +48,11 @@ public class ThirdWorkingArea {
 
         //Çift sayıyı bulma başlangıç
 
-        Scanner inp = new Scanner(System.in);
+        /*Scanner inp = new Scanner(System.in);
         int n;
         System.out.print("Lütfen bir sayı giriniz: ");
         n = inp.nextInt();
-        /*for (int i = 0; i<= n; i++) {
+        for (int i = 0; i<= n; i++) {
             if (i % 2 == 0){
                 System.out.println(i);
             }
@@ -60,7 +60,10 @@ public class ThirdWorkingArea {
         //Çift sayıyı bulma son
 
         //ortak bölen ortalama başlangıç
-        int sum = 0, j = 0;
+        /*Scanner inp = new Scanner(System.in);
+        int n, sum = 0, j = 0;
+        System.out.print("Lütfen bir sayı giriniz: ");
+        n = inp.nextInt();
         for (int i = 0; i < n; i++){
             if (i % 3 == 0 && i % 4 == 0) {
                 System.out.println(i);
@@ -69,9 +72,26 @@ public class ThirdWorkingArea {
             }
         }
         System.out.println("Toplam: " + sum);
-        System.out.println("Ortalama: " + sum / j);
+        System.out.println("Ortalama: " + sum / j);*/
         //ortak bölen ortalama son
 
+        //tek sayı toplama başlangıç
+
+        int n, t = 0;
+        Scanner inp = new Scanner(System.in);
+        System.out.print("Lütfen bir sayı giriniz: ");
+        n= inp.nextInt();
+        while (n >= 0) {
+            System.out.println(n);
+            if (n % 2 != 0) {
+                t += n;
+            }
+            System.out.print("Lütfen bir sayı giriniz: ");
+            n= inp.nextInt();
+        }
+        System.out.println("Tek sayıların toplamı: " + t);
+        System.out.println("Program sona ermiştir.");
+        //tek sayı toplama son
 
 
 
