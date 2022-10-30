@@ -1,7 +1,5 @@
 package com.ecansu;
 
-import java.util.Scanner;
-
 public class ThirdWorkingArea {
 
     public static void main(String[] args) {
@@ -24,7 +22,7 @@ public class ThirdWorkingArea {
         //while döngüsü son
 
         //do-while döngüsü başlangıç
-        int pass;
+        /*int pass;
         Scanner inp = new Scanner(System.in);
         boolean askpassword = true;
 
@@ -37,9 +35,14 @@ public class ThirdWorkingArea {
             } else {
                 System.out.println("Yanlış");
             }
-        } while(askpassword);
-
+        } while(askpassword);*/
         //do-while döngüsü son
+
+        //for döngüsü başlangıç
+        for (int i = 0; i < 10; i+=2) {
+            System.out.println(i);
+        }
+        //for döngüsü son
 
     }
 
