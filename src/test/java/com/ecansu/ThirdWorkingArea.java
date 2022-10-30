@@ -59,6 +59,18 @@ public class ThirdWorkingArea {
         }*/
         //Çift sayıyı bulma son
 
+        //ortak bölen ortalama başlangıç
+        int sum = 0, j = 0;
+        for (int i = 0; i < n; i++){
+            if (i % 3 == 0 && i % 4 == 0) {
+                System.out.println(i);
+                sum += i;
+                j++;
+            }
+        }
+        System.out.println("Toplam: " + sum);
+        System.out.println("Ortalama: " + sum / j);
+        //ortak bölen ortalama son
 
 
 
