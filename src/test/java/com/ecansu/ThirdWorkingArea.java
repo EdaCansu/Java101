@@ -76,8 +76,7 @@ public class ThirdWorkingArea {
         //ortak bölen ortalama son
 
         //tek sayı toplama başlangıç
-
-        int n, t = 0;
+        /* int n, t = 0;
         Scanner inp = new Scanner(System.in);
         System.out.print("Lütfen bir sayı giriniz: ");
         n= inp.nextInt();
@@ -90,9 +89,29 @@ public class ThirdWorkingArea {
             n= inp.nextInt();
         }
         System.out.println("Tek sayıların toplamı: " + t);
-        System.out.println("Program sona ermiştir.");
+        System.out.println("Program sona ermiştir."); */
         //tek sayı toplama son
 
+        //java assignment başlangıç
+        int n, sum = 0;
+        Scanner inp = new Scanner(System.in);
+        boolean isError = false;
+
+        while (!isError) {
+            System.out.print("Lütfen bir sayı giriniz: ");
+            n = inp.nextInt();
+            if (n % 2 == 0) {
+                isError = false;
+                if (n % 4 == 0) {
+                    sum += n;
+                }
+            } else {
+                isError = true;
+            }
+        }
+        System.out.println("Toplam:" + sum);
+        System.out.println("Programınız sonlanmıştır.");
+        //java assignment son
 
 
     }
