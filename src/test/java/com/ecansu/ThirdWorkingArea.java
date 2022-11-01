@@ -93,7 +93,7 @@ public class ThirdWorkingArea {
         //tek sayı toplama son
 
         //java assignment başlangıç
-        int n, sum = 0;
+        /*int n, sum = 0;
         Scanner inp = new Scanner(System.in);
         boolean isError = false;
 
@@ -110,9 +110,33 @@ public class ThirdWorkingArea {
             }
         }
         System.out.println("Toplam:" + sum);
-        System.out.println("Programınız sonlanmıştır.");
+        System.out.println("Programınız sonlanmıştır.");*/
         //java assignment son
 
+        //2'nin kuvveti başlangıç
+        int n;
+        double a;
+        Scanner input = new Scanner(System.in);
+        System.out.print("Lütfen bir sayı giriniz: ");
+        n = input.nextInt();
+        System.out.println(n);
+
+        for (int i = 0; i <= n; i++) {
+            a = Math.pow(2,i);
+            if (a < n) {
+                System.out.print( a + ",");
+            }
+            else {
+                break;
+            }
+        }
+
+        // İkinci ve kısa yol
+        for (int i = 1; i <= n; i *= 3) {
+            System.out.println(i);
+        }
+
+        //2'nin kuvveti son
 
     }
 
