@@ -114,7 +114,7 @@ public class ThirdWorkingArea {
         //java assignment son
 
         //2'nin kuvveti başlangıç
-        int n;
+       /* int n;
         double a;
         Scanner input = new Scanner(System.in);
         System.out.print("Lütfen bir sayı giriniz: ");
@@ -134,9 +134,27 @@ public class ThirdWorkingArea {
         // İkinci ve kısa yol
         for (int i = 1; i <= n; i *= 3) {
             System.out.println(i);
-        }
-
+        }*/
         //2'nin kuvveti son
+
+        //Faktöriyel başlangıç
+        int n, a = 1;
+        Scanner inp = new Scanner(System.in);
+        System.out.print("Lütfen bir sayı giriniz: ");
+        n = inp.nextInt();
+        System.out.println("Sayınız: " + n);
+
+        for (int i = n; i > 0; i--) {
+            a *= i;
+            if (i > 1){
+                System.out.print(i + "*");
+            } else {
+                System.out.println(i);
+            }
+        }
+        System.out.println("");
+        System.out.println("Faktöriyel sonucunuz: " + a);
+        //Faktöriyel son
 
     }
 
