@@ -138,7 +138,7 @@ public class ThirdWorkingArea {
         //2'nin kuvveti son
 
         //Faktöriyel başlangıç
-        int n, a = 1;
+        /* int n, a = 1;
         Scanner inp = new Scanner(System.in);
         System.out.print("Lütfen bir sayı giriniz: ");
         n = inp.nextInt();
@@ -153,8 +153,31 @@ public class ThirdWorkingArea {
             }
         }
         System.out.println("");
-        System.out.println("Faktöriyel sonucunuz: " + a);
+        System.out.println("Faktöriyel sonucunuz: " + a); */
         //Faktöriyel son
+
+        //Kombinasyon başlangıç
+         int n,r, a = 1, b = 1, c, d= 1, k;
+        Scanner inp = new Scanner(System.in);
+        System.out.print("Lütfen bir sayı giriniz: ");
+        n = inp.nextInt();
+        System.out.print("Lütfen ikinci bir sayı giriniz: ");
+        r = inp.nextInt();
+        c = n-r;
+
+        for (int i = 1; i <= n; i++ ){
+            a *= i;
+        }
+        for (int i = 1; i <= r; i++ ){
+            b *= i;
+        }
+
+        for (int i = 1; i <= c; i++){
+            d *= i;
+        }
+        k = a / (b * d);
+        System.out.println(n + "'ın " + r + "li kombinasyonu : " + k);
+        //Kombinasyon son
 
     }
 
