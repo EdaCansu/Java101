@@ -204,7 +204,7 @@ public class ThirdWorkingArea {
         //Üslü sayı hesaplama son
 
         //Armstrong number start
-        int number, a, b, lastnumber, numberOfDigits = 0, usluSayi = 0, sum = 0;
+        /*int number, a, b, lastnumber, numberOfDigits = 0, exp = 0, sum = 0;
         Scanner inp = new Scanner(System.in);
         System.out.print("Lütfen bir sayı giriniz: ");
         number = inp.nextInt();
@@ -221,9 +221,9 @@ public class ThirdWorkingArea {
 
         while (a != 0){
             lastnumber = a%10;
-            usluSayi = (int) Math.pow(lastnumber,numberOfDigits);
+            exp = (int) Math.pow(lastnumber,numberOfDigits);
             a/= 10;
-            sum += usluSayi;
+            sum += exp;
         }
 
         if (number == sum)
@@ -231,9 +231,26 @@ public class ThirdWorkingArea {
         else
             isArmstrong = false;
 
-        System.out.println(isArmstrong);
-
+        System.out.println(isArmstrong);*/
         //Armstrong number end
+
+
+        //Basamak değerleri toplamı başlangıç
+        int n, nBack, sum = 0, lastNumber;
+        Scanner inp = new Scanner(System.in);
+        System.out.print("Lütfen bir sayı giriniz: ");
+        n = inp.nextInt();
+        nBack = n;
+
+        while (nBack != 0) {
+            lastNumber = nBack % 10;
+            sum += lastNumber;
+            nBack /= 10;
+        }
+        System.out.println("Basamak değerleri toplamı: " + sum);
+
+
+        //Basamak değerleri toplamı son
 
 
 
