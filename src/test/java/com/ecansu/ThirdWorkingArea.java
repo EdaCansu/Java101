@@ -213,11 +213,9 @@ public class ThirdWorkingArea {
         boolean isArmstrong = true;
 
         while (b != 0){
-            lastnumber =  b % 10;
             numberOfDigits++;
             b /= 10;
         }
-        //System.out.println(numberOfDigits);
 
         while (a != 0){
             lastnumber = a%10;
@@ -234,9 +232,8 @@ public class ThirdWorkingArea {
         System.out.println(isArmstrong);*/
         //Armstrong number end
 
-
         //Basamak değerleri toplamı başlangıç
-        int n, nBack, sum = 0, lastNumber;
+        /*int n, nBack, sum = 0, lastNumber;
         Scanner inp = new Scanner(System.in);
         System.out.print("Lütfen bir sayı giriniz: ");
         n = inp.nextInt();
@@ -247,12 +244,21 @@ public class ThirdWorkingArea {
             sum += lastNumber;
             nBack /= 10;
         }
-        System.out.println("Basamak değerleri toplamı: " + sum);
-
-
+        System.out.println("Basamak değerleri toplamı: " + sum);*/
         //Basamak değerleri toplamı son
 
+        //Harmonic series start
+        int n;
+        double result = 0;
+        Scanner inp = new Scanner(System.in);
+        System.out.print("Lütfen bir sayı giriniz: ");
+        n = inp.nextInt();
 
+        for(double i = 1; i <= n; i++){
+            result += (1/i);
+        }
+        System.out.print("Sonuç: "+ result);
+        //Harmonic series end
 
 
     }
