@@ -271,12 +271,23 @@ public class ThirdWorkingArea {
             for (int k = 1; k <= (n - i); k++) {
                 System.out.print(" ");
             }
+
             for (int j = 1; j <= (2 * i) - 1; j++) {
                 System.out.print("*");
             }
             System.out.println("");
         }
-        int a = 1;
+
+        for (int i = (n-1); i >= 1; i--){
+            for (int k = (n-i); k >= 1; k--){
+                System.out.print(" ");
+            }
+            for (int l= (2 * i) - 1; l >= 1; l-- ){
+                System.out.print("*");
+            }
+            System.out.println("");
+        }
+        /*int a = 1;
         while (a <= n) {
             int b = 1;
             while (b <= (n - a)) {
@@ -290,7 +301,7 @@ public class ThirdWorkingArea {
             }
             a++;
             System.out.println("");
-        }
+        }*/
 
         //star triangle end
     }
