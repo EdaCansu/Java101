@@ -157,7 +157,7 @@ public class ThirdWorkingArea {
         //Faktöriyel son
 
         //Kombinasyon başlangıç
-         int n,r, a = 1, b = 1, c, d= 1, k;
+        /* int n,r, a = 1, b = 1, c, d= 1, k;
         Scanner inp = new Scanner(System.in);
         System.out.print("Lütfen bir sayı giriniz: ");
         n = inp.nextInt();
@@ -176,8 +176,33 @@ public class ThirdWorkingArea {
             d *= i;
         }
         k = a / (b * d);
-        System.out.println(n + "'ın " + r + "li kombinasyonu : " + k);
+        System.out.println(n + "'ın " + r + "li kombinasyonu : " + k);*/
         //Kombinasyon son
+
+        //Üslü sayı hesaplama başlangıç
+        int a, b, c = 1 ;
+        Scanner inp = new Scanner(System.in);
+        System.out.print("Lütfen taban sayısını giriniz: ");
+        a = inp.nextInt();
+        System.out.print("Lütfen üs sayısını giriniz: ");
+        b= inp.nextInt();
+
+        //c = (int) Math.pow(a,b);
+        //System.out.println(c);
+
+        /*for(int i = 1; i <=b; i++){
+            c *= a;
+        }
+        System.out.println(c);*/
+        int i = 1;
+        while (i <=b){
+            c *= a;
+            i++;
+        }
+        System.out.println(c);
+
+        //Üslü sayı hesaplama son
+
 
     }
 
