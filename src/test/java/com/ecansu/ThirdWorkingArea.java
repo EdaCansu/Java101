@@ -268,13 +268,27 @@ public class ThirdWorkingArea {
         n = input.nextInt();
 
         for (int i = 1; i <= n; i++) {
-
             for (int k = 1; k <= (n - i); k++) {
                 System.out.print(" ");
             }
             for (int j = 1; j <= (2 * i) - 1; j++) {
                 System.out.print("*");
             }
+            System.out.println("");
+        }
+        int a = 1;
+        while (a <= n) {
+            int b = 1;
+            while (b <= (n - a)) {
+                System.out.print(" ");
+                b++;
+            }
+            int c = 1;
+            while (c <= ((2*a) -1)) {
+                System.out.print("*");
+                c++;
+            }
+            a++;
             System.out.println("");
         }
 
