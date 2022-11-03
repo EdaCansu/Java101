@@ -248,7 +248,7 @@ public class ThirdWorkingArea {
         //Basamak değerleri toplamı son
 
         //Harmonic series start
-        int n;
+        /*int n;
         double result = 0;
         Scanner inp = new Scanner(System.in);
         System.out.print("Lütfen bir sayı giriniz: ");
@@ -257,10 +257,29 @@ public class ThirdWorkingArea {
         for(double i = 1; i <= n; i++){
             result += (1/i);
         }
-        System.out.print("Sonuç: "+ result);
+        System.out.print("Sonuç: "+ result);*/
         //Harmonic series end
 
+        //star triangle start
 
+        int n;
+        Scanner input = new Scanner(System.in);
+        System.out.print("Lütfen bir sayı giriniz: ");
+        n = input.nextInt();
+
+        for (int i = 1; i <= n; i++) {
+
+            for (int k = 1; k <= (n - i); k++) {
+                System.out.print(" ");
+            }
+            for (int j = 1; j <= (2 * i) - 1; j++) {
+                System.out.print("*");
+            }
+            System.out.println("");
+        }
+
+        //star triangle end
     }
 
 }
+
