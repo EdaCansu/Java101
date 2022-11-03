@@ -180,7 +180,7 @@ public class ThirdWorkingArea {
         //Kombinasyon son
 
         //Üslü sayı hesaplama başlangıç
-        int a, b, c = 1 ;
+        /*int a, b, c = 1 ;
         Scanner inp = new Scanner(System.in);
         System.out.print("Lütfen taban sayısını giriniz: ");
         a = inp.nextInt();
@@ -190,18 +190,52 @@ public class ThirdWorkingArea {
         //c = (int) Math.pow(a,b);
         //System.out.println(c);
 
-        /*for(int i = 1; i <=b; i++){
+        for(int i = 1; i <=b; i++){
             c *= a;
         }
-        System.out.println(c);*/
+        System.out.println(c);
         int i = 1;
         while (i <=b){
             c *= a;
             i++;
         }
-        System.out.println(c);
+        System.out.println(c);*/
 
         //Üslü sayı hesaplama son
+
+        //Armstrong number start
+        int number, a, b, lastnumber, numberOfDigits = 0, usluSayi = 0, sum = 0;
+        Scanner inp = new Scanner(System.in);
+        System.out.print("Lütfen bir sayı giriniz: ");
+        number = inp.nextInt();
+        a = number;
+        b = a;
+        boolean isArmstrong = true;
+
+        while (b != 0){
+            lastnumber =  b % 10;
+            numberOfDigits++;
+            b /= 10;
+        }
+        //System.out.println(numberOfDigits);
+
+        while (a != 0){
+            lastnumber = a%10;
+            usluSayi = (int) Math.pow(lastnumber,numberOfDigits);
+            a/= 10;
+            sum += usluSayi;
+        }
+
+        if (number == sum)
+            isArmstrong = true;
+        else
+            isArmstrong = false;
+
+        System.out.println(isArmstrong);
+
+        //Armstrong number end
+
+
 
 
     }
