@@ -1,5 +1,7 @@
 package com.ecansu;
 
+import java.util.Scanner;
+
 public class ThirdWorkingArea {
 
     public static void main(String[] args) {
@@ -479,7 +481,7 @@ public class ThirdWorkingArea {
 
         //Prime number start
 
-        for (int i = 2; i <= 100; i++) {
+        /*for (int i = 2; i <= 100; i++) {
             int primeNumber = 0;
             for (int k = 2; k < i; k++) {
                 if (i % k == 0) {
@@ -490,8 +492,25 @@ public class ThirdWorkingArea {
             if (primeNumber == 0) {
                 System.out.println("Prime number: " + i);
             }
-        }
+        }*/
         //Prime number end
+
+        //Fibonacci series start
+        int number, sum = 0, n0 = 0, n1 = 1;
+        Scanner inp = new Scanner(System.in);
+        System.out.print("Please, enter a number: ");
+        number = inp.nextInt();
+        System.out.println(n0);
+        System.out.println(n1);
+
+        for(int i = 2; i <= number; i++){
+            sum = n0 + n1;
+            System.out.println(sum);
+            n0 = n1;
+            n1 = sum;
+        }
+
+        //Fibonacci series end
 
     }
 
