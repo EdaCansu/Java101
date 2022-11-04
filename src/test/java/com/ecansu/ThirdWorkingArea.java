@@ -365,7 +365,7 @@ public class ThirdWorkingArea {
         n2 = inp.nextInt();
 
         for (int i = 1; i <= n1; i++) {
-            System.out.println(i);
+            //System.out.println(i);
             if(n1%i == 0 && n2%i == 0){
                 gcd = i;
             }
@@ -374,11 +374,22 @@ public class ThirdWorkingArea {
         System.out.println("====================");
         //Second road (less loop, saving on time)
         for (int i = n1; i >=1; i--) {
-            System.out.println(i);
+            //System.out.println(i);
             if(n1%i == 0 && n2%i == 0){
                 gcd = i;
                 break;
             }
+        }
+        System.out.println(gcd);
+        System.out.println("=================");
+        //gcd while loop
+        int i = n1;
+        while (i >= 1) {
+            if(n1%i == 0 && n2%i == 0){
+                gcd = i;
+                break;
+            }
+            i--;
         }
         System.out.println(gcd);
 
