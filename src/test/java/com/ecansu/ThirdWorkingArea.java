@@ -1,7 +1,5 @@
 package com.ecansu;
 
-import java.util.Scanner;
-
 public class ThirdWorkingArea {
 
     public static void main(String[] args) {
@@ -462,7 +460,7 @@ public class ThirdWorkingArea {
         //Perfect number end
 
         //Reverse triangle start
-        int number;
+        /*int number;
         Scanner inp = new Scanner(System.in);
         System.out.print("Please, enter a number: ");
         number = inp.nextInt();
@@ -475,9 +473,25 @@ public class ThirdWorkingArea {
                 System.out.print("*");
             }
             System.out.println("");
-        }
-
+        }*/
         //Reverse triangle end
+
+
+        //Prime number start
+
+        for (int i = 2; i <= 100; i++) {
+            int primeNumber = 0;
+            for (int k = 2; k < i; k++) {
+                if (i % k == 0) {
+                    primeNumber = 1;
+                    break;
+                }
+            }
+            if (primeNumber == 0) {
+                System.out.println("Prime number: " + i);
+            }
+        }
+        //Prime number end
 
     }
 
