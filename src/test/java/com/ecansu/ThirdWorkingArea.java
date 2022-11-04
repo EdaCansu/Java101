@@ -418,7 +418,7 @@ public class ThirdWorkingArea {
 
         //Min - max start
 
-        int n1, n2, big = 0, small = 0;
+        /*int n1, n2, big = 0, small = 0;
         Scanner inp = new Scanner(System.in);
         System.out.print("How many number will you enter: ");
         n1 = inp.nextInt();
@@ -439,8 +439,28 @@ public class ThirdWorkingArea {
             }
             System.out.println("the biggest number: " + big);
             System.out.println("the smallest number: " + small);
-        }
+        }*/
         //Min - max end
+
+        //Perfect number start
+        int number, sum = 0;
+        Scanner input = new Scanner(System.in);
+        System.out.print("Please, enter a number: ");
+        number = input.nextInt();
+
+        for(int i= 1; i < number; i++){
+            if(number % i == 0){
+                sum += i;
+            }
+        }
+
+        if (number == sum){
+            System.out.println(number + " is a perfect number!");
+        } else {
+            System.out.println(number + " is not a perfect number!");
+        }
+
+        //Perfect number end
 
     }
 
