@@ -262,7 +262,7 @@ public class ThirdWorkingArea {
 
         //star triangle start
 
-        int n;
+        /* int n;
         Scanner input = new Scanner(System.in);
         System.out.print("Lütfen bir sayı giriniz: ");
         n = input.nextInt();
@@ -287,7 +287,7 @@ public class ThirdWorkingArea {
             }
             System.out.println("");
         }
-        /*int a = 1;
+        int a = 1;
         while (a <= n) {
             int b = 1;
             while (b <= (n - a)) {
@@ -304,6 +304,37 @@ public class ThirdWorkingArea {
         }*/
 
         //star triangle end
+
+        //ATM start
+        String userName, password;
+        Scanner inp = new Scanner(System.in);
+        int right = 3;
+
+        while (right > 0){
+            System.out.print("Username: ");
+            userName= inp.nextLine();
+            System.out.print("Password: ");
+            password = inp.nextLine();
+            if (userName.equals("patika") && password.equals("dev123")){
+                System.out.println("Welcome to X Bank.");
+            } else {
+                right--;
+                System.out.print("Username or Password incorrect!");
+                if (right != 0) {
+                    System.out.print(" Please try again.\n");
+                    System.out.println("Remaining right: "+ right);
+                } else {
+                    System.out.println("\nYour account has been blocked. Please contact with the bank. ");
+                }
+            }
+        }
+
+
+
+
+
+
+        //ATM end
     }
 
 }
