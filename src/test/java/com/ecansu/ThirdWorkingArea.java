@@ -308,30 +308,51 @@ public class ThirdWorkingArea {
         //ATM start
         String userName, password;
         Scanner inp = new Scanner(System.in);
-        int right = 3;
+        int right = 3, select, balance = 1500;
 
-        while (right > 0){
+        while (right > 0) {
             System.out.print("Username: ");
-            userName= inp.nextLine();
+            userName = inp.nextLine();
             System.out.print("Password: ");
             password = inp.nextLine();
-            if (userName.equals("patika") && password.equals("dev123")){
+            if (userName.equals("patika") && password.equals("dev123")) {
                 System.out.println("Welcome to X Bank.");
+                do {
+                    System.out.println("1 - Deposit \n" +
+                            "2 - Withdraw\n" +
+                            "3 - Balance inquiry\n" +
+                            "4 -Exit");
+                    System.out.print("Please select the action: ");
+                    select = inp.nextInt();
+                    if (select == 1) {
+                        System.out.print("Amount of money you want to deposit: ");
+                        int money = inp.nextInt();
+                        balance += money;
+                    } else if (select == 2) {
+                        System.out.print("Amount of money you want to withdraw: ");
+                        int money = inp.nextInt();
+                        if (balance < money){
+                            System.out.println("Insufficient balance.");
+                        }else {
+                            balance -= money;
+                        }
+                    } else if (select == 3) {
+                        System.out.println("Your balance: " + balance);
+                    }
+                } while (select != 4);
+                System.out.println("See you again. Thank you");
+                break;
             } else {
                 right--;
                 System.out.print("Username or Password incorrect!");
                 if (right != 0) {
                     System.out.print(" Please try again.\n");
-                    System.out.println("Remaining right: "+ right);
+                    System.out.println("Remaining right: " + right);
                 } else {
                     System.out.println("\nYour account has been blocked. Please contact with the bank. ");
                 }
             }
         }
-
-
-
-
 
 
         //ATM end
