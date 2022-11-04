@@ -443,7 +443,7 @@ public class ThirdWorkingArea {
         //Min - max end
 
         //Perfect number start
-        int number, sum = 0;
+        /*int number, sum = 0;
         Scanner input = new Scanner(System.in);
         System.out.print("Please, enter a number: ");
         number = input.nextInt();
@@ -458,9 +458,26 @@ public class ThirdWorkingArea {
             System.out.println(number + " is a perfect number!");
         } else {
             System.out.println(number + " is not a perfect number!");
+        }*/
+        //Perfect number end
+
+        //Reverse triangle start
+        int number;
+        Scanner inp = new Scanner(System.in);
+        System.out.print("Please, enter a number: ");
+        number = inp.nextInt();
+
+        for(int i = number; i >= 1; i--){
+            for(int l = 0; l < (number - i); l++){
+                System.out.print(" ");
+            }
+            for(int k = ((2 * i) - 1); k >= 1; k--){
+                System.out.print("*");
+            }
+            System.out.println("");
         }
 
-        //Perfect number end
+        //Reverse triangle end
 
     }
 
