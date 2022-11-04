@@ -401,6 +401,19 @@ public class ThirdWorkingArea {
         }
         System.out.println(lcm);
 
+        System.out.println("=================");
+
+        //while loop
+        int i= 1;
+        while (i <= (n1 *n2)){
+            if (i % n1 == 0 && i % n2 ==0) {
+                lcm = i;
+                break;
+            }
+            i++;
+        }
+        System.out.println(lcm);
+
         //GCD - LCM end
     }
 
