@@ -306,7 +306,7 @@ public class ThirdWorkingArea {
         //star triangle end
 
         //ATM start
-        String userName, password;
+        /*String userName, password;
         Scanner inp = new Scanner(System.in);
         int right = 3, select, balance = 1500;
 
@@ -352,10 +352,37 @@ public class ThirdWorkingArea {
                     System.out.println("\nYour account has been blocked. Please contact with the bank. ");
                 }
             }
-        }
-
-
+        } */
         //ATM end
+
+        //GCD - LCM start
+
+        int n1, n2, gcd = 1;
+        Scanner inp = new Scanner(System.in);
+        System.out.print("Please enter a number: ");
+        n1 = inp.nextInt();
+        System.out.print("Please enter a second number: ");
+        n2 = inp.nextInt();
+
+        for (int i = 1; i <= n1; i++) {
+            System.out.println(i);
+            if(n1%i == 0 && n2%i == 0){
+                gcd = i;
+            }
+        }
+        System.out.println(gcd);
+        System.out.println("====================");
+        //Second road (less loop, saving on time)
+        for (int i = n1; i >=1; i--) {
+            System.out.println(i);
+            if(n1%i == 0 && n2%i == 0){
+                gcd = i;
+                break;
+            }
+        }
+        System.out.println(gcd);
+
+        //GCD - LCM end
     }
 
 }
