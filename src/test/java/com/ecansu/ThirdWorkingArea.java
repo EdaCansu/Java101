@@ -357,7 +357,7 @@ public class ThirdWorkingArea {
 
         //GCD - LCM start
 
-        int n1, n2, gcd = 1;
+        int n1, n2, gcd = 1, lcm = 1;
         Scanner inp = new Scanner(System.in);
         System.out.print("Please enter a number: ");
         n1 = inp.nextInt();
@@ -383,7 +383,7 @@ public class ThirdWorkingArea {
         System.out.println(gcd);
         System.out.println("=================");
         //gcd while loop
-        int i = n1;
+        /* int i = n1;
         while (i >= 1) {
             if(n1%i == 0 && n2%i == 0){
                 gcd = i;
@@ -391,7 +391,15 @@ public class ThirdWorkingArea {
             }
             i--;
         }
-        System.out.println(gcd);
+        System.out.println(gcd);*/
+
+        for (int i = 1; i <= (n1 *n2); i++){
+            if(i %n1 == 0 && i%n2 == 0){
+                lcm = i;
+                break;
+            }
+        }
+        System.out.println(lcm);
 
         //GCD - LCM end
     }
