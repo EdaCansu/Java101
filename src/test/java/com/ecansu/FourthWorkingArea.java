@@ -80,6 +80,9 @@ public class FourthWorkingArea {
             result *=a;
         }*/
     static int exp(int a, int b){
+        if ( b == 0) {
+            return 1;
+        }
         if ( b == 1){
             return a;
         }
@@ -155,8 +158,7 @@ public class FourthWorkingArea {
         n1=inp.nextInt();
         System.out.print("Lütfen üs sayısını giriniz: ");
         n2= inp.nextInt();
-
-        System.out.println(exp(n1,n2));
+        System.out.println("Üs sonucu: " + exp(n1,n2));
 
     }
 }
