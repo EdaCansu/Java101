@@ -86,7 +86,7 @@ public class FourthWorkingArea {
     //Recursive exponential number end
 
     //Prime number start
-    static int prime(int n, int n1){
+   /* static int prime(int n, int n1){
         if (n == 2) {
             return 1;
         }
@@ -98,11 +98,20 @@ public class FourthWorkingArea {
             return 0;
         }
         return prime(n, n1 +1);
+    }*/
+    //Prime number end
+
+    //Pattern start
+    static void pattern(int n){
+        System.out.print(n + " ");
+        if (n > 0) {
+            pattern(n - 5);
+            System.out.print(n + " ");
+        }
     }
 
 
-
-    //Prime number end
+    //Pattern end
 
     public static void main(String[] args) {
         //- Palindrom -- System.out.println(isPalindrom(2442));
@@ -174,7 +183,7 @@ public class FourthWorkingArea {
         System.out.println("Üs sonucu: " + exp(n1,n2));*/
 
         //Prime number
-        int a;
+       /* int a;
         Scanner inp = new Scanner(System.in);
         System.out.print("Please enter a number: ");
         a = inp.nextInt();
@@ -182,7 +191,13 @@ public class FourthWorkingArea {
             System.out.println(a + " bir asal sayıdır.");
         } else {
             System.out.println(a + " bir asal sayı değildir.");
-        }
+        }*/
 
+        //Pattern
+        int a;
+        Scanner inp = new Scanner(System.in);
+        System.out.print("Please enter a number: ");
+        a = inp.nextInt();
+        pattern(a);
     }
 }
