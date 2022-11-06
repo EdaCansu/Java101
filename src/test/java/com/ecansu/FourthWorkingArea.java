@@ -74,12 +74,7 @@ public class FourthWorkingArea {
     //Calculator end
 
     //Recursive exponential end start
-
-    // int result =1;
-        /*for(int i = 1; i <= b; i++){
-            result *=a;
-        }*/
-    static int exp(int a, int b){
+    /*static int exp(int a, int b){
         if ( b == 0) {
             return 1;
         }
@@ -87,9 +82,27 @@ public class FourthWorkingArea {
             return a;
         }
        return exp(a, b-1) * a;
+    }*/
+    //Recursive exponential number end
+
+    //Prime number start
+    static int prime(int n, int n1){
+        if (n == 2) {
+            return 1;
+        }
+        if (n1 + 1 == n){
+            return 1;
+        }
+
+        if ((n % (n1 + 1)) == 0){
+            return 0;
+        }
+        return prime(n, n1 +1);
     }
 
-    //Recursive exponential number end
+
+
+    //Prime number end
 
     public static void main(String[] args) {
         //- Palindrom -- System.out.println(isPalindrom(2442));
@@ -152,13 +165,24 @@ public class FourthWorkingArea {
         System.out.println("Güle güle!");*/
 
         //revursive ile üslü sayı hesaplama
-        int n1, n2;
+        /*int n1, n2;
         Scanner inp = new Scanner(System.in);
         System.out.print("Lütfen taban sayısını giriniz: ");
         n1=inp.nextInt();
         System.out.print("Lütfen üs sayısını giriniz: ");
         n2= inp.nextInt();
-        System.out.println("Üs sonucu: " + exp(n1,n2));
+        System.out.println("Üs sonucu: " + exp(n1,n2));*/
+
+        //Prime number
+        int a;
+        Scanner inp = new Scanner(System.in);
+        System.out.print("Please enter a number: ");
+        a = inp.nextInt();
+        if (prime(a, 2) == 1) {
+            System.out.println(a + " bir asal sayıdır.");
+        } else {
+            System.out.println(a + " bir asal sayı değildir.");
+        }
 
     }
 }

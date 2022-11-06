@@ -479,7 +479,7 @@ public class ThirdWorkingArea {
 
         //Prime number start
 
-        /*for (int i = 2; i <= 100; i++) {
+        for (int i = 2; i <= 100; i++) {
             int primeNumber = 0;
             for (int k = 2; k < i; k++) {
                 if (i % k == 0) {
@@ -490,7 +490,7 @@ public class ThirdWorkingArea {
             if (primeNumber == 0) {
                 System.out.println("Prime number: " + i);
             }
-        }*/
+        }
         //Prime number end
 
         //Fibonacci series start
