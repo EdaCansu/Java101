@@ -29,7 +29,7 @@ public class FourthWorkingArea {
 
     //Calculator start
 
-    static int sum(int a, int b){
+    /*static int sum(int a, int b){
         int result = a +b;
         System.out.println("Toplam: " + result);
         return result;
@@ -69,9 +69,24 @@ public class FourthWorkingArea {
     static void rect(int a, int b){
         System.out.println("Çevresi : "+ 2 *(a+b));
         System.out.println("Alanı : "+ a*b);
-    }
+    }*/
 
     //Calculator end
+
+    //Recursive exponential end start
+
+    // int result =1;
+        /*for(int i = 1; i <= b; i++){
+            result *=a;
+        }*/
+    static int exp(int a, int b){
+        if ( b == 1){
+            return a;
+        }
+       return exp(a, b-1) * a;
+    }
+
+    //Recursive exponential number end
 
     public static void main(String[] args) {
         //- Palindrom -- System.out.println(isPalindrom(2442));
@@ -81,7 +96,9 @@ public class FourthWorkingArea {
         System.out.println(fib(i));
         }*/
 
-        int select;
+
+        //Calculator
+        /*int select;
         Scanner scan = new Scanner(System.in);
         String menu = "1- Toplama\n" +
                 "2- Çıkarma\n" +
@@ -129,7 +146,17 @@ public class FourthWorkingArea {
                     System.out.println("Yanlış bir değer girdiniz, tekrar deneyiniz.");
             }
         }
-        System.out.println("Güle güle!");
+        System.out.println("Güle güle!");*/
+
+        //revursive ile üslü sayı hesaplama
+        int n1, n2;
+        Scanner inp = new Scanner(System.in);
+        System.out.print("Lütfen taban sayısını giriniz: ");
+        n1=inp.nextInt();
+        System.out.print("Lütfen üs sayısını giriniz: ");
+        n2= inp.nextInt();
+
+        System.out.println(exp(n1,n2));
 
     }
 }
