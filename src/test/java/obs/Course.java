@@ -1,3 +1,5 @@
+package obs;
+
 public class Course {
     Teacher teacher;
     String name;

@@ -1,3 +1,7 @@
+package obs;
+
+import obs.Course;
+
 public class Student {
     Course c1;
     Course c2;

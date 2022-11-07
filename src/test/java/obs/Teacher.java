@@ -1,3 +1,5 @@
+package obs;
+
 public class Teacher {
     String name;
     String mbno;
