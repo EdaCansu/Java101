@@ -9,7 +9,25 @@ public class Arrayler {
         int[] list2 = {5, 14, 7, 11, 9};
         Arrays.sort(list2);
 
-        int number = 13, minNumber = list2[0], maxNumber = list2[0];
+        int[][] list3 = new int[7][4];
+        //B harfi yazdırma
+        for(int i = 0; i < list3.length; i++){
+            for (int k= 0; k < list3[i].length; k++){
+                if(((i == 0) || (i == 3) || (i == 6)) && (k == 3)){
+                    System.out.print(" ");
+                } else if(((i == 1) || (i == 2) || (i == 4) || (i == 5)) && ((k == 1) || (k == 2))){
+                    System.out.print("   ");
+                } else {
+                    System.out.print("*  ");
+                }
+
+            }
+            System.out.println("");
+        }
+
+
+
+        /*int number = 13, minNumber = list2[0], maxNumber = list2[0];
         for (int i: list2) {
             if (i < number) {
                minNumber = i;
@@ -22,7 +40,7 @@ public class Arrayler {
         }
 
         System.out.println("en küçük number " + minNumber);
-        System.out.println("En büyük number " + maxNumber);
+        System.out.println("En büyük number " + maxNumber);*/
 
 
 
