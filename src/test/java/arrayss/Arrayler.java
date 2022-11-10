@@ -1,6 +1,7 @@
 package arrayss;
 
 import java.util.Arrays;
+import java.util.Scanner;
 
 public class Arrayler {
 
@@ -16,7 +17,7 @@ public class Arrayler {
     public static void main(String[] args) {
 
         //int[] list = {59, 57, 81, 1, -240, 80, 59};
-        int[] list2 = {5, 14, 6, 7, 6, 2, 9, 5, 2, 9};
+        //int[] list2 = {5, 14, 6, 7, 6, 2, 9, 5, 2, 9};
         //Arrays.sort(list2);
 
         //int[][] list3 = new int[7][4];
@@ -36,8 +37,8 @@ public class Arrayler {
         }*/
 
 
-       int[] duplicate = new int[list2.length];
-        int startIndex = 0;
+       /*int[] duplicate = new int[list2.length];
+       int startIndex = 0;
 
         for(int i = 0; i < list2.length; i++){
             for (int j = 0; j < list2.length; j++){
@@ -56,7 +57,7 @@ public class Arrayler {
             }
         }
         //İkinci bir yol
-        System.out.println(Arrays.toString(duplicate));
+        System.out.println(Arrays.toString(duplicate));*/
 
 
         /*int number = 13, minNumber = list2[0], maxNumber = list2[0];
@@ -96,6 +97,31 @@ public class Arrayler {
         System.out.println("min   " + min);
         System.out.println("max    " + max);*/
 
+        //New something
+        Scanner inp = new Scanner(System.in);
+        System.out.print("Lütfen dizinin boyutunu giriniz: ");
+        int boyut = inp.nextInt();
+        int number, startIndex = 0;
+
+        int[] arr1 = new int[boyut];
+        System.out.println("Dizinin Elemanlarını Giriniz: ");
+
+        for( int i = 0; i < boyut; i++){
+            System.out.print(i+1 + ". Elemanı: ");
+            arr1[i] = inp.nextInt();
+        }
+        Arrays.sort(arr1);
+        System.out.println(Arrays.toString(arr1));
+
+
+        /*int[] arr = {25, 32, 14, 9, 10, -5};
+        Arrays.sort(arr);
+
+        for (int i = 0; i < arr.length; i++){
+            System.out.println((i+1) + ". Eleman: " + arr[i]);
+        }
+
+        System.out.println(Arrays.toString(arr));*/
 
 
     }
