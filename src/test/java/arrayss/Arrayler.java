@@ -1,13 +1,10 @@
 package arrayss;
 
-import java.util.Arrays;
-import java.util.Scanner;
-
 public class Arrayler {
 
-    static boolean isFind(int[] arr, int value){
-        for(int i : arr){
-            if( i == value){
+    static boolean isFind(int[] arr, int value) {
+        for (int i : arr) {
+            if (i == value) {
                 return true;
             }
         }
@@ -98,7 +95,7 @@ public class Arrayler {
         System.out.println("max    " + max);*/
 
         //New something
-        Scanner inp = new Scanner(System.in);
+        /*Scanner inp = new Scanner(System.in);
         System.out.print("Lütfen dizinin boyutunu giriniz: ");
         int boyut = inp.nextInt();
         int number, startIndex = 0;
@@ -111,7 +108,7 @@ public class Arrayler {
             arr1[i] = inp.nextInt();
         }
         Arrays.sort(arr1);
-        System.out.println(Arrays.toString(arr1));
+        System.out.println(Arrays.toString(arr1));*/
 
 
         /*int[] arr = {25, 32, 14, 9, 10, -5};
@@ -122,6 +119,44 @@ public class Arrayler {
         }
 
         System.out.println(Arrays.toString(arr));*/
+
+
+        int[][] arr = new int[2][3];
+        arr[0][0] = 2;
+        arr[0][1] = 3;
+        arr[0][2] = 4;
+        arr[1][0] = 5;
+        arr[1][1] = 6;
+        arr[1][2] = 7;
+        int countRow = 0, countCol = 0;
+
+
+        for (int i = 0; i < arr.length; i++) {
+            for (int k = 0; k < arr[i].length; k++) {
+                countCol = arr[i].length;
+                System.out.print(arr[i][k] + " ");
+            }
+            System.out.println("");
+            countRow++;
+        }
+
+        System.out.println(countRow + " countrow");
+        System.out.println(countCol + " countcol");
+
+        int[][] arrNew = new int[countCol][countRow];
+        for (int i = 0; i < countRow; i++) {
+            for (int k = 0; k < countCol; k++) {
+                arrNew[k][i] = arr[i][k];
+            }
+        }
+
+
+        for (int[] val : arrNew) {
+            for (int i : val) {
+                System.out.print(i + " ");
+            }
+            System.out.println("");
+        }
 
 
     }
