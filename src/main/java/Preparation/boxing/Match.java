@@ -1,4 +1,4 @@
-package boxing;
+package Preparation.boxing;
 
 public class Match {
     Fighter f1;

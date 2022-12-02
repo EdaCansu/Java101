@@ -1,4 +1,4 @@
-package boxing;
+package Preparation.boxing;
 
 public class Fighter {
     String name;

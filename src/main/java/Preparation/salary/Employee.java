@@ -1,4 +1,4 @@
-package salary;
+package Preparation.salary;
 
 import java.util.Date;
 

@@ -1,4 +1,4 @@
-package obs;
+package Preparation.obs;
 
 public class Course {
     Teacher teacher;

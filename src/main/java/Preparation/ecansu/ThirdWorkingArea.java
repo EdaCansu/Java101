@@ -1,4 +1,4 @@
-package com.ecansu;
+package Preparation.ecansu;
 
 public class ThirdWorkingArea {
 

@@ -1,6 +1,4 @@
-package obs;
-
-import obs.Course;
+package Preparation.obs;
 
 public class Student {
     Course c1;

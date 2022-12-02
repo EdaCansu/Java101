@@ -1,4 +1,4 @@
-package arrayss;
+package Preparation.arrayss;
 
 public class Arrayler {
 

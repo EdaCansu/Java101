@@ -1,4 +1,4 @@
-package com.ecansu;
+package Preparation.ecansu;
 
 import java.util.Scanner;
 
