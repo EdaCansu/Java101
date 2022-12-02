@@ -21,6 +21,8 @@ public class DBConnect {
         String sql4 = "INSERT INTO book (title, page_number, author_id) VALUES (?,?,?)";
         String sql5 = "UPDATE book SET title = 'Edoşka', page_number= 2020 WHERE id = 18";
         String sql6 = "UPDATE book SET title = ?, page_number= ? WHERE id = ?";
+        String sql7 = "Delete from book where id = 18";
+        String sql8 = "Delete from book where id = ?";
 
         try {
             connect = DriverManager.getConnection(url, user, password);
@@ -51,7 +53,12 @@ public class DBConnect {
             prSt.setInt(2, 18);
             prSt.executeUpdate();*/
 
+           /* st = connect.createStatement();
+            st.executeUpdate(sql7);*/
 
+         /*   PreparedStatement prst = connect.prepareStatement(sql8);
+            prst.setInt(1, 17);
+            prst.executeUpdate();*/
 
 
         }catch (SQLException e){
