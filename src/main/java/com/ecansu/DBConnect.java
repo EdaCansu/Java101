@@ -33,7 +33,7 @@ public class DBConnect {
             //st.executeUpdate(sql3);
 
             PreparedStatement prSt = connect.prepareStatement(sql4);
-            prSt.setString(1, "Edoşkaaaaaa");
+            prSt.setString(1, "Edoşkaaaa");
             prSt.setInt(2, 415);
             prSt.setInt(3, 8);
 
